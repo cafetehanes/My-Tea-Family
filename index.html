@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cafe family</title>
+    <!-- Tambahkan link ke CDN Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Tambahkan script JavaScript untuk responsif -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </head>
+  <body class="font-sans">
+    <!-- Navigasi Bar -->
+<nav class="bg-green-300 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-white text-xl font-bold">Teh Manis</div>
+
+    <!-- Navigasi Link -->
+    <div class="hidden md:flex space-x-4">
+      <a href="#" class="text-green-800 hover:text-white">Home</a>
+      <a href="#" class="text-green-800 hover:text-white">About Us</a>
+      <a href="#" class="text-green-800 hover:text-white">Services</a>
+      <a href="#" class="text-green-800 hover:text-white">Contact</a>
+    </div>
+
+    <!-- Tombol Mobile Menu (Hanya muncul pada tampilan mobile) -->
+    <div class="md:hidden">
+      <button onclick="toggleMenu()" class="text-green-800 focus:outline-none">
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+    <!-- Section: Usaha Teh -->
+<section class="bg-gray-100 py-16">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold text-teal-500 mb-6">Selamat Datang di Usaha Teh Kami</h2>
+    <p class="text-gray-700 mb-8">Nikmati sensasi teh terbaik dengan menikmati indahnya senja.</p>
+
+    <!-- Gambar Usaha Teh -->
+    <img src="data:image/jpeg;base64,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" alt="Minuman Teh dengan Senja dan Bukit" class="rounded-lg mb-8">
+
+    <!-- Deskripsi Usaha Teh -->
+    <p class="text-gray-700 mb-4">
+      Usaha Teh kami menggunakan teh berkualitas tinggi karena menggunakan daun teh terbaik
+      yang dipetik dengan cermat oleh petani teh berpengalaman.
+    </p>
+    <p class="text-gray-700 mb-4">
+      Setiap cangkir teh kami memberikan pengalaman yang unik dan memuaskan bagi para pencinta teh.
+    </p>
+  </div>
+</section>
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+
+</html>
+
+    <!-- Mobile Menu (Hanya muncul pada tampilan mobile) -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-800 p-4">
+      <a href="#" class="block text-white mb-2">Home</a>
+      <a href="#" class="block text-white mb-2">About</a>
+      <a href="#" class="block text-white mb-2">Services</a>
+      <a href="#" class="block text-white mb-2">Contact</a>
+    </div>
+</html>
+
+<!-- Section: Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Informasi Perusahaan -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Teh Kami</h3>
+            <p class="text-gray-500">Nikmati keindahan teh dari kebun teh kami yang terletak di tempat yang indah.</p>
+        </div>
+
+        <!-- Navigasi Cepat -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Navigasi</h3>
+            <ul>
+                <li><a href="#" class="hover:underline">Home</a></li>
+                <li><a href="#" class="hover:underline">About</a></li>
+                <li><a href="#" class="hover:underline">Services</a></li>
+                <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Informasi Kontak -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+            <p class="text-gray-500">Alamat: Jalan Savera No. 15</p>
+            <p class="text-gray-500">Email: myteausaha@gmail.com</p>
+            <p class="text-gray-500">Telepon: (012) 345-6789</p>
+        </div>
+    </div>
+    <div class="mt-8 text-center">
+        <p>&copy; 2023 Usaha Teh. All rights reserved.</p>
+    </div>
+</footer>
